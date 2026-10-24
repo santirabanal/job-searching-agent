@@ -1,0 +1,48 @@
+# Job Search Configuration
+
+settings:
+  results_per_query: 15
+  hours_old: 72 # Scrape postings from last 3 days
+  boards:
+    - linkedin
+    - indeed
+    - glassdoor
+    - google
+
+# Queries targeting local Buenos Aires (Pasantías / Jr)
+local_searches:
+  location: "Buenos Aires, Argentina"
+  queries:
+    - "Pasantía Inteligencia Artificial"
+    - "Pasante AI"
+    - "Pasantía Data Science"
+    - "Junior AI Engineer"
+    - "Desarrollador Python Junior"
+    - "Trainee AI"
+    - "Pasante Machine Learning"
+
+# Queries targeting Remote positions (Worldwide / LATAM friendly)
+remote_searches:
+  is_remote: true
+  queries:
+    - "AI Intern"
+    - "Machine Learning Intern"
+    - "Generative AI Intern"
+    - "Junior AI Engineer"
+    - "AI Engineer Intern"
+    - "Data Science Intern"
+
+# Title hard-filters (Drop immediately without calling LLM)
+title_exclusions:
+  - "Senior"
+  - "Sr."
+  - "Sr "
+  - "Lead"
+  - "Principal"
+  - "Director"
+  - "Manager"
+  - "Architect"
+  - "VP"
+  - "Staff"
+  - "Head of"
+  - "Chief"

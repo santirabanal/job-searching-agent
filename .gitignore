@@ -1,0 +1,26 @@
+# Environments & secrets
+.venv/
+env/
+venv/
+.env
+.env.local
+.env.*.local
+
+# Databases & local logs
+*.db
+*.sqlite3
+data/jobs.db
+data/matches_report.md
+
+# Python cache & artifacts
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.log
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
